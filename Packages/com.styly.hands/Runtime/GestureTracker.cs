@@ -7,6 +7,9 @@ namespace Styly.Hands
 {
     /// <summary>
     /// A gesture that detects when a hand is held in a static shape and orientation for a minimum amount of time.
+    /// This is a simple version of the StaticHandGesture component provided as a sample by Unity.
+    /// The component includes unnecessary features that only make sense for the sample.
+    /// https://docs.unity3d.com/Packages/com.unity.xr.hands@1.4/manual/gestures/static-hand-gesture.html
     /// </summary>
     public class GestureTracker : MonoBehaviour
     {
@@ -106,10 +109,6 @@ namespace Styly.Hands
         {
             get => m_GestureDetectionInterval;
             set => m_GestureDetectionInterval = value;
-        }
-
-        void Awake()
-        {
         }
 
         void OnEnable()
